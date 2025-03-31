@@ -7,8 +7,8 @@ uses
   FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, FMX.Layouts;
 
 type
-  TForm1 = class(TForm)
-    Layout1: TLayout;
+  TPageIndex = class(TForm)
+    lytContainer: TLayout;
   private
     { Private declarations }
   public
@@ -16,7 +16,7 @@ type
   end;
 
 var
-  Form1: TForm1;
+  PageIndex: TPageIndex;
 
 implementation
 

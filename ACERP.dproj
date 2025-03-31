@@ -1,7 +1,7 @@
 ﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
     <PropertyGroup>
         <ProjectGuid>{59454CC9-6B3E-4457-B68C-E11E6C1A7CFF}</ProjectGuid>
-        <ProjectVersion>19.5</ProjectVersion>
+        <ProjectVersion>20.1</ProjectVersion>
         <FrameworkType>FMX</FrameworkType>
         <Base>True</Base>
         <Config Condition="'$(Config)'==''">Debug</Config>
@@ -140,7 +140,12 @@
             <MainSource>MainSource</MainSource>
         </DelphiCompile>
         <DCCReference Include="src\view\acerp.view.index.pas">
-            <Form>Form1</Form>
+            <Form>PageIndex</Form>
+            <FormType>fmx</FormType>
+        </DCCReference>
+        <DCCReference Include="src\view\router\acerp.view.router.pas"/>
+        <DCCReference Include="src\view\pages\home\acerp.view.pages.home.pas">
+            <Form>PageHome</Form>
             <FormType>fmx</FormType>
         </DCCReference>
         <BuildConfiguration Include="Base">
@@ -184,7 +189,7 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="Win32\Debug\ACERP.exe" Configuration="Debug" Class="ProjectOutput">
+                <DeployFile LocalName="lib\ACERP.exe" Configuration="Debug" Class="ProjectOutput">
                     <Platform Name="Win32">
                         <RemoteName>ACERP.exe</RemoteName>
                         <Overwrite>true</Overwrite>
